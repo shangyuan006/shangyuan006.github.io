@@ -30,7 +30,7 @@ twitter_username: ""
 github_username: shangyuan006
 
 # Build settings
-theme: jekyll-theme-yat
+#theme: jekyll-theme-yat
 remote_theme: jeffreytse/jekyll-theme-yat
 plugins:
   - jekyll-feed
