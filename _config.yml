@@ -55,7 +55,7 @@ github_username: shangyuan006
 
 # Build settings
 # theme: jekyll-theme-yat
-remote_theme: jeffreytse/jekyll-theme-yat
+remote_theme: "jeffreytse/jekyll-theme-yat"
 
 # If you want more debug log, you can set true
 # debug: false
