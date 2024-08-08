@@ -30,7 +30,10 @@ jobs:
           bundler: "2.4.20" # Default is compatible bundler version (~>2.5.0)
 
       - name: Install dependencies
-        run: bundle install
+        run: |
+          gem install bundler
+          bundle config path vendor/bundle
+          bundle install
 
       - name: Build Jekyll site
         run: bundle exec jekyll build
@@ -54,7 +57,7 @@ jobs:
       # Use GitHub Deploy Action to build and deploy to Github
       # For latest version: `jeffreytse/jekyll-deploy-action@master`
       - name: Deploy to GitHub Pages
-        uses: jeffreytse/jekyll-deploy-action@v0.6.0
+        uses: jeffreytse/jekyll-deploy-action@master
         with:
           provider: "github" # Default is github
           token: ${{ secrets.GITHUB_TOKEN }} # It's your Personal Access Token(PAT)
