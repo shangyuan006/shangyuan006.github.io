@@ -70,7 +70,7 @@ jobs:
           # ssh_private_key: "" # It's your SSH private key (SSH approach)
           repository: "${{ github.repository }}" # Default is current repository
           branch: "gh-pages" # Default is gh-pages for github provider
-          jekyll_src: "./" # Default is root directory
+          jekyll_src: "/home/runner/work/shangyuan006.github.io/shangyuan006.github.io/" # Default is root directory
           jekyll_cfg: "_config.yml" # Default is _config.yml
           jekyll_baseurl: "" # Default is according to _config.yml
           cname: "" # Default is to not use a cname
