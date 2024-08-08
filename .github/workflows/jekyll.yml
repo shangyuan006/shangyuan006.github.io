@@ -29,6 +29,13 @@ jobs:
           ruby-version: "3.2.3" # Default is 3.2.0 version
           bundler: "2.4.20" # Default is compatible bundler version (~>2.5.0)
 
+      - name: Check Gemfile
+        run: |
+          if [ ! -f Gemfile ]; then
+            echo "Gemfile not found"
+            exit 1
+          fi
+
       - name: Install dependencies
         run: |
           bundle config path vendor/bundle
